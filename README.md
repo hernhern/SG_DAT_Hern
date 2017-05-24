@@ -79,7 +79,7 @@ def convertPos(x):
     else:
         return 'n' #default
 
-#how can i remove postings with only arabic words? 
+#to anothony: how can i remove postings with only arabic words? 
 def filterSoup(x):
     tokens = tokenizer.tokenize(x)
     tokens = [i for i in tokens if i not in stopwords]
